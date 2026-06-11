@@ -1,16 +1,69 @@
-# React + Vite
+# 🗳️ Polling Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple full-stack Polling Web Application built using **Spring Boot (Backend)** and **React (Frontend)**.  
+Users can create polls, view available polls, and vote for their favorite options.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+- Create new poll
+- View list of all polls
+- Vote on poll options
+- Real-time vote update (backend handled)
+- Simple and clean UI
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Backend:
+- Java
+- Spring Boot
+- Spring Data JPA
+- REST APIs
+- MySQL
+
+### Frontend:
+- React JS
+- Axios
+- React Router DOM
+- HTML, CSS
+
+---
+
+## 📁 Project Structure
+Polling-web-Page/
+│
+├── backend (Spring Boot)
+│ ├── src/main/java
+│ ├── Controller
+│ ├── Service
+│ ├── Repository
+│ ├── Model
+│ └── Application.java
+│
+├── frontend (React)
+│ ├── src/
+│ ├── components/pages
+│ ├── App.jsx
+│ └── main.jsx
+
+🔗 API Endpoints
+POST /poll/Api/save/poll → Create Poll
+GET /poll/Api/get/poll → Get all polls
+GET /poll/Api/getByid/{id} → Get poll by ID
+POST /poll/Api/vote/{id}?option= → Vote on poll
+📸 UI Pages
+Home Page
+Create Poll Page
+Poll List Page
+Poll Details Page
+Vote Confirmation Page
+👨‍💻 Author
+
+Aditya Ranjane
+
+📌 Note
+
+This project is built for learning full-stack development using Spring Boot and React.
